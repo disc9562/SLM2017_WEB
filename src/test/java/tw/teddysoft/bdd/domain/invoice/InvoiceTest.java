@@ -52,7 +52,7 @@ public class InvoiceTest {
     }
 
 
-    //@Test
+    @Test
     public void reset_tax_included_price_will_recalculate_VAT_and_tax_excluded_price(){
 
         Invoice invoice = new Invoice();
