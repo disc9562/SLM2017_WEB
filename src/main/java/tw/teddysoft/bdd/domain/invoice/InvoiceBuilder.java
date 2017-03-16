@@ -1,0 +1,32 @@
+package tw.teddysoft.bdd.domain.invoice;
+
+/**
+ * Created by teddy on 2017/3/9.
+ */
+public class InvoiceBuilder {
+
+    private double vatRate = 0.0;
+    private int taxIncludedPrice = 0;
+
+    private InvoiceBuilder(){}
+
+    public static InvoiceBuilder newInstance(){
+        return new InvoiceBuilder();
+    }
+
+    public InvoiceBuilder withVatRate(double vatRate) {
+        this.vatRate = vatRate;
+        return this;
+    }
+
+    public InvoiceBuilder withTaxIncludedPrice(int taxIncludedPrice) {
+        this.taxIncludedPrice = taxIncludedPrice;
+        return this;
+    }
+
+    public Invoice issue() {
+        return new Invoice(taxIncludedPrice, vatRate,
+                InvoiceCalculator.getTaxExcludedPrice(taxIncludedPrice, vatRate)
+                , InvoiceCalculator.getVAT(taxIncludedPrice, vatRate));
+    }
+}

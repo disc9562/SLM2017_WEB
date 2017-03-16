@@ -1,4 +1,7 @@
-Feature: Issuing invoice for companies
+Feature: Issuing invoices for companies
+  In order to avoid errors
+  As a Teddysoft employee
+  I want to brainlessly issue an company invoice with tax included price
 
   Scenario: Issuing invoices with one item for companies by providing tax included prices
     Given Ｔhe VAT rate is 0.05

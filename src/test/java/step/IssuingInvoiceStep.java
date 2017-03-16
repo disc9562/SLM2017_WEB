@@ -2,39 +2,42 @@ package step;
 
 import cucumber.api.java8.En;
 import tw.teddysoft.bdd.domain.invoice.Invoice;
-import cucumber.api.java8.En;
+import tw.teddysoft.bdd.domain.invoice.InvoiceBuilder;
+
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
 
 /**
  * Created by teddy on 2017/3/2.
  */
-public class IssueInvoiceStep implements En {
-
+public class IssuingInvoiceStep implements En {
+    InvoiceBuilder builder;
     Invoice invoice;
-    Invoice newInvoice;
 
-    public IssueInvoiceStep() {
+    public IssuingInvoiceStep() {
 
         Given("^Ｔhe VAT rate is (\\d+\\.\\d+)$", (Double arg1) -> {
-            invoice = new Invoice();
-            invoice.setVatRate(arg1);
+            builder = InvoiceBuilder.newInstance();
+            builder.withVatRate(arg1);
         });
 
         Given("^the tax included price is (\\d+)$", (Integer arg1) -> {
-            invoice.setTaxIncludedPrice(arg1);
+            builder.withTaxIncludedPrice((int)arg1);
+
         });
 
-
         When("^I issue a company invoice$", () -> {
-            newInvoice = invoice.issue();
+            invoice = builder.issue();
         });
 
         Then("^I should see the VAT is (\\d+)$", (Integer arg1) -> {
-            assertEquals(arg1, invoice.getVAT());
+            assertThat(invoice.getVAT(), is (arg1));
+            assertEquals((int)arg1, invoice.getVAT());
         });
 
+
         Then("^the tax excluded price is (\\d+)$", (Integer arg1) -> {
-            assertEquals(arg1, invoice.getTaxExcludedPrice());
+            assertEquals((int)arg1, invoice.getTaxExcludedPrice());
         });
     }
 }
