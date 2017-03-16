@@ -22,7 +22,7 @@ public class Invoice {
 
     public int getVAT(){return this.vat; }
 
-    public Double getVatRate() {
+    public double getVatRate() {
         return vatRate;
     }
 

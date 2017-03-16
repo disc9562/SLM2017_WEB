@@ -55,6 +55,21 @@ public class WhenIssuingInvoice {
                 issue();
         test_that_an_invoice_has_all_zero_value(invoice);
     }
+    @Test
+    public void should_be_a_regular_invoice_when_given_normal_vatRate_and_taxExcludePrice(){
+        Invoice invoice = InvoiceBuilder.newInstance().
+                withVatRate(0.05).
+                withTaxExcludedPrice(34286).
+                issue();
+
+        // use AssertJ to perform assertion
+        assertThat(invoice).isNotNull();
+        assertThat(invoice.getTaxIncludedPrice()).isEqualTo(36000);
+        assertThat(invoice.getVAT()).isEqualTo(1714);
+        assertThat(invoice.getTaxExcludedPrice()).isEqualTo(34286);
+        assertThat(invoice.getVatRate()).isEqualTo(0.05);
+    }
+
 
     // use hamcrest to perform assertion
     private void test_that_an_invoice_has_all_zero_value(Invoice invoice){

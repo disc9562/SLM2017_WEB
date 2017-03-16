@@ -21,9 +21,8 @@ public class IssuingInvoiceStep implements En {
             builder.withVatRate(arg1);
         });
 
-        Given("^the tax included price is (\\d+)$", (Integer arg1) -> {
+        Given("^the tax included price provided is (\\d+)$", (Integer arg1) -> {
             builder.withTaxIncludedPrice((int)arg1);
-
         });
 
         When("^I issue a company invoice$", () -> {
@@ -32,12 +31,19 @@ public class IssuingInvoiceStep implements En {
 
         Then("^I should see the VAT is (\\d+)$", (Integer arg1) -> {
             assertThat(invoice.getVAT(), is (arg1));
-            assertEquals((int)arg1, invoice.getVAT());
         });
 
 
         Then("^the tax excluded price is (\\d+)$", (Integer arg1) -> {
-            assertEquals((int)arg1, invoice.getTaxExcludedPrice());
+            assertThat(invoice.getTaxExcludedPrice(), is (arg1));
+        });
+
+        Given("^the tax excluded price provided is (\\d+)$", (Integer arg1) -> {
+            builder.withTaxExcludedPrice(arg1);
+        });
+
+        Then("^the tax included price is (\\d+)$", (Integer arg1) -> {
+            assertThat(invoice.getTaxIncludedPrice(), is (arg1));
         });
     }
 }
