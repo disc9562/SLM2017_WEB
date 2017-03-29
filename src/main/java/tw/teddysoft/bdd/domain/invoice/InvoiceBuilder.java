@@ -7,7 +7,7 @@ public class InvoiceBuilder {
 
     private double vatRate = 0.0;
     private int taxIncludedPrice = 0;
-   private  int taxExcludedPrice=0;
+    private  int taxExcludedPrice=0;
     private InvoiceBuilder(){}
 
     public static InvoiceBuilder newInstance(){
@@ -21,20 +21,27 @@ public class InvoiceBuilder {
 
     public InvoiceBuilder withTaxIncludedPrice(int taxIncludedPrice) {
         this.taxIncludedPrice = taxIncludedPrice;
+        this.taxExcludedPrice = 0;
         return this;
     }
 
     public Invoice issue() {
-        if(taxIncludedPrice==0 && taxExcludedPrice!=0) {
+        if(isUseTaxExcludedPriceToCalculateInvoice()) {
             taxIncludedPrice =(int) Math.round(taxExcludedPrice * (1 + vatRate));
         }
+
         return new Invoice(taxIncludedPrice, vatRate,
                 InvoiceCalculator.getTaxExcludedPrice(taxIncludedPrice, vatRate)
                 , InvoiceCalculator.getVAT(taxIncludedPrice, vatRate));
     }
 
-    public InvoiceBuilder withTaxExcludedPrice(Integer arg1) {
-        this.taxExcludedPrice=arg1;
+    public InvoiceBuilder withTaxExcludedPrice(Integer taxExcludedPrice) {
+        this.taxExcludedPrice = taxExcludedPrice;
+        taxIncludedPrice = 0;
         return this;
+    }
+
+    private boolean isUseTaxExcludedPriceToCalculateInvoice(){
+        return (0 == taxIncludedPrice && 0 != taxExcludedPrice);
     }
 }

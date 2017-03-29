@@ -20,7 +20,7 @@ public class Invoice {
         return taxIncludedPrice;
     }
 
-    public int getVAT(){return this.vat; }
+    public int getVat(){return this.vat; }
 
     public double getVatRate() {
         return vatRate;
