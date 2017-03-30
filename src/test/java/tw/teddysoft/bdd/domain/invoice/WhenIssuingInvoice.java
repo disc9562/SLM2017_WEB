@@ -15,7 +15,7 @@ public class WhenIssuingInvoice {
 
     @Test
     public void should_be_a_regular_invoice_when_given_normal_vatRate_and_taxIncludePrice(){
-        Invoice invoice = InvoiceBuilder.newInstance().
+        Invoice invoice = DefaultInvoiceBuilder.newInstance().
                 withVatRate(0.05).
                 withTaxIncludedPrice(17000).
                 issue();
@@ -38,19 +38,19 @@ public class WhenIssuingInvoice {
 
     @Test
     public void should_be_initially_an_empty_invoice(){
-        Invoice invoice = InvoiceBuilder.newInstance().issue();
+        Invoice invoice = DefaultInvoiceBuilder.newInstance().issue();
         test_that_an_invoice_has_all_zero_value(invoice);
     }
 
     @Test
     public void should_be_an_empty_invoice_when_given_taxIncludedPrice_is_zero(){
-        Invoice invoice = InvoiceBuilder.newInstance().
+        Invoice invoice = DefaultInvoiceBuilder.newInstance().
                 withVatRate(0).
                 withTaxIncludedPrice(0).
                 issue();
         test_that_an_invoice_has_all_zero_value(invoice);
 
-        invoice = InvoiceBuilder.newInstance().
+        invoice = DefaultInvoiceBuilder.newInstance().
                 withTaxIncludedPrice(0).
                 issue();
         test_that_an_invoice_has_all_zero_value(invoice);
@@ -58,7 +58,7 @@ public class WhenIssuingInvoice {
 
     @Test
     public void should_be_a_regular_invoice_when_given_normal_vatRate_and_taxExcludePrice(){
-        Invoice invoice = InvoiceBuilder.newInstance().
+        Invoice invoice = DefaultInvoiceBuilder.newInstance().
                 withVatRate(0.05).
                 withTaxExcludedPrice(34286).
                 issue();
@@ -73,7 +73,7 @@ public class WhenIssuingInvoice {
 
     @Test
     public void should_use_the_latest_assigned_value_to_calc_invoice(){
-        Invoice invoice = InvoiceBuilder.newInstance().
+        Invoice invoice = DefaultInvoiceBuilder.newInstance().
                 withVatRate(0.05).
                 withTaxIncludedPrice(10).
                 withTaxExcludedPrice(10).

@@ -47,6 +47,7 @@ Feature: Issuing invoices for companies
 
 
   Scenario: A special case to issue an invoice by assigning 10$ to tax included prices first and tax excluded prices second
+    And   I am on the invoice Web page
     Given Ｔhe VAT rate is 0.05
     And   the tax included price provided is 10
     And   the tax excluded price provided is 10
@@ -54,6 +55,7 @@ Feature: Issuing invoices for companies
     Then  I should see the VAT is 1
     And   the tax included price is 11
     And   the tax excluded price is 10
+
 
 
   Scenario: A special case to issue an invoice by assigning 10$ to tax excluded prices first and tax included prices second
