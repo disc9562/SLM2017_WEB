@@ -8,15 +8,24 @@ import tw.teddysoft.bdd.web.app.InvoiceWeb;
 
 public class Hook {
 
+    private boolean WebOpen = false;
     @Before
     public void beforeScenario(Scenario scenario){
         if (Utility.isUnderInvoiceWebMode())
             InvoiceWeb.main(new String [0]);
     }
 
+    @Before("@OpenWeb")
+    public void beforeOpenWeb(){
+        if(!WebOpen){
+            InvoiceWeb.main(new String [0]);
+        }
+    }
+
     @After
     public void afterScenario(Scenario scenario){
     }
+
 
 
 }

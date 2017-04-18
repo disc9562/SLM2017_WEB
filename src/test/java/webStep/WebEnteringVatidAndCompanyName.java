@@ -29,10 +29,6 @@ public class WebEnteringVatidAndCompanyName {
     public void iEnterTheCompanyNameInCompanyNameField(String companyName){
         WebElement element = driver.findElement(By.name("companyName"));
         element.sendKeys(companyName);
-//        String arr[] = companyName.split("");
-//        for(String s: arr){
-//            element.sendKeys(s);
-//        }
         element.submit();
     }
     @Then("^I should see the VAT ID field show \"([^\"]*)\" in browser$")
@@ -45,10 +41,6 @@ public class WebEnteringVatidAndCompanyName {
     public void iEnterTheVATIDInVATIDField(String vatid){
         WebElement element = driver.findElement(By.name("vatid"));
         element.sendKeys(vatid);
-//        String arr[] = vatid.split("");
-//        for(String s: arr){
-//            element.sendKeys(s);
-//        }
         element.submit();
     }
 
