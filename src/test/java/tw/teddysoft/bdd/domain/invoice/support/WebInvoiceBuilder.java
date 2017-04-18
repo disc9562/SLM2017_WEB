@@ -17,7 +17,7 @@ public class WebInvoiceBuilder implements InvoiceBuilder {
 
     private WebDriver getWebDriver(){
         if (null == driver){
-            System.setProperty("webdriver.chrome.driver" ,  "/Applications/chromedriver");
+            System.setProperty("webdriver.chrome.driver" ,  "chromedriver.exe");
             driver = new ChromeDriver();
             driver.get("http://localhost:4567/invoice");
         }
@@ -53,7 +53,7 @@ public class WebInvoiceBuilder implements InvoiceBuilder {
             return new Invoice(taxIncludedPrice, vatRate, taxExcludedPrice, vat);
         }
         finally {
-            getWebDriver().close();
+            getWebDriver().quit();
         }
     }
 

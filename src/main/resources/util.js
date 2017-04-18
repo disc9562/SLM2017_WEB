@@ -9,4 +9,14 @@ function clearTaxInclude() {
     x.value = ""
 }
 
+function clearCompanyName(){
+    var x = document.getElementById("companyName");
+    x.value = ""
+}
+
+function clearVatid(){
+    var x = document.getElementById("vatid");
+    x.value = ""
+}
+
 

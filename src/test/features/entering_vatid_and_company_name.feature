@@ -3,10 +3,24 @@ Feature: Entering VAT ID and the company name
   As a Teddysoft employee
   I want to make sure the VAT ID and company name are consistency
 
-  Scenario: Entering VAT ID gets the corresponding company name
-    When  I enter the VAT ID "53909614"
-    Then  I should see the company name "泰迪軟體科技有限公司"
+  Scenario Outline: Entering VAT ID gets the corresponding company name
+    When  I enter the VAT ID "<vatid>"
+    Then  I should see the company name "<companyName>"
+    Examples:
+      | companyName | vatid |
+      | 泰迪軟體科技有限公司  | 53909614 |
+      | 蒂森電梯股份有限公司 |  14070857  |
+      | 鼓勵閣商業顧問有限公司 |  24940741  |
+      | 百碩工業股份有限公司  | 97352022  |
+      | 大鵰生技股份有限公司 | 86831314  |
 
-  Scenario: Entering company name gets the corresponding VAT ID
-    When  I enter the company name "泰迪軟體科技有限公司"
-    Then  I should see the VAT ID "53909614"
+  Scenario Outline: Entering company name gets the corresponding VAT ID
+    When  I enter the company name "<companyName>"
+    Then  I should see the VAT ID "<vatid>"
+    Examples:
+      | companyName | vatid |
+      | 泰迪軟體科技有限公司  | 53909614 |
+      | 蒂森電梯股份有限公司 |  14070857  |
+      | 鼓勵閣商業顧問有限公司 |  24940741  |
+      | 百碩工業股份有限公司  | 97352022  |
+      | 大鵰生技股份有限公司 | 86831314  |

@@ -35,5 +35,20 @@
 
 <p>
 
+<h1>公司名稱及統一編號查詢</h1>
+<form action="/company" method="post">
+<table>
+<tr>
+<td>公司名稱</td>
+<td>統一編號</td>
+</tr>
+<tr>
+<td><input id="companyName" name="companyName" type="text" onkeypress="clearVatid"></td>
+<td><input id="vatid" name="vatid" type="text" onkeypress="clearCompanyName"></td>
+</tr>
+</table>
+
+  <input name="search" type="submit" value="查詢">
+
 </body>
 </html>

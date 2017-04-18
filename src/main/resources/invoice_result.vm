@@ -7,7 +7,7 @@
 <body>
 
 <h1>三聯式發票</h1>
-
+<form action="/invoice" method="get">
 <table>
 <tr>
 <td>含稅金額</td>
@@ -27,7 +27,21 @@
 </form>
 
 <p>
+<h1>公司名稱及統一編號查詢</h1>
+<form action="/invoice" method="get">
+<table>
+<tr>
+<td>公司名稱</td>
+<td>統一編號</td>
+</tr>
+<tr>
+<td><input name="companyName" type="text" value="$companyName" readonly></td>
+<td><input name="vatid" type="text" value="$vatid" readonly></td>
+</tr>
+</table>
 
+  <input name="research" type="submit" value="重新查詢">
+</form>
 
 </body>
 </html>

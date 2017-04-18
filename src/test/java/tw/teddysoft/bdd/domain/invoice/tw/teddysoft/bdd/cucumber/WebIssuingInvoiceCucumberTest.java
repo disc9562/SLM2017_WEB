@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/features/issuing_company_invoice.feature",
-        glue = {"webstep"},
+        glue = {"step"},
         format = {"json:target/cucumber.json", "html:target/site/cucumber-pretty"}
 )
 public class WebIssuingInvoiceCucumberTest {

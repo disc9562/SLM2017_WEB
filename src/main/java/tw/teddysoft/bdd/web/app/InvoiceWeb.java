@@ -4,6 +4,7 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import tw.teddysoft.bdd.domain.invoice.Invoice;
 import tw.teddysoft.bdd.domain.invoice.InvoiceBuilder;
+import tw.teddysoft.bdd.domain.invoice.VatidAndCompanyName;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +22,7 @@ import static spark.Spark.*;
 public final class InvoiceWeb {
 
     public static void main(String[] args) {
-
+//        port(Integer.valueOf(args[0]));
         get("/invoice", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("Title", "三聯式發票");
@@ -54,6 +55,25 @@ public final class InvoiceWeb {
 
             return new ModelAndView(model, "invoice_result.vm"); // located in the resources directory
         }, new VelocityTemplateEngine());
+
+        post("/company", (request, response) -> {
+            Invoice invoice = new Invoice(0,0.05,0,0);
+            String companyName = request.queryMap("companyName").value();
+            String vatid = request.queryMap("vatid").value();
+
+            if(isUseCompanyNameToSearch(companyName)){
+                vatid = VatidAndCompanyName.getVatid(companyName);
+            }
+            else {
+                companyName = VatidAndCompanyName.getCompanyName(vatid);
+            }
+            Map<String, Object> model = new HashMap<>();
+            model.put("companyName",companyName);
+            model.put("vatid",vatid);
+            model.put("invoice", invoice);
+            return new ModelAndView(model, "invoice_result.vm");
+        }, new VelocityTemplateEngine());
+
     }
 
     private static boolean isUseTaxIncludedPriceToCalculateInvoice(int taxIncludedPrice){
@@ -66,6 +86,8 @@ public final class InvoiceWeb {
         else
            return Integer.valueOf(str);
     }
-
+    private static boolean isUseCompanyNameToSearch(String companyName){
+        return !(companyName.equals(""));
+    }
 
 }
