@@ -2,7 +2,9 @@ Feature: Entering VAT ID and the company name
   In order to avoid errors
   As a Teddysoft employee
   I want to make sure the VAT ID and company name are consistency
-  @OpenWeb
+#  Background :
+#    Given Open service
+#  @OpenWeb
   Scenario Outline: Entering company name gets the corresponding VAT ID with web
   Given I am on the google browser
   When I enter the company name "<companyName>" in company name field

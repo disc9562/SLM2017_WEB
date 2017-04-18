@@ -16,7 +16,8 @@ public class Hook {
     }
 
     @Before("@OpenWeb")
-    public void beforeOpenWeb(){
+    public void beforeOpenWeb(Scenario scenario){
+        System.out.println(scenario.getName());
         if(!WebOpen){
             InvoiceWeb.main(new String [0]);
         }

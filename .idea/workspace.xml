@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce85260e-bcb7-4f2c-aae9-aca46a350af3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cucumber.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/formatter.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/jquery-1.8.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/style.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step/Hook.class" afterPath="$PROJECT_DIR$/target/test-classes/step/Hook.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step/IssuingInvoiceStep.class" afterPath="$PROJECT_DIR$/target/test-classes/step/IssuingInvoiceStep.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebCompanyInfoSearchCucumberTest.class" afterPath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebCompanyInfoSearchCucumberTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/webStep/WebEnteringVatidAndCompanyName.class" afterPath="$PROJECT_DIR$/target/test-classes/webStep/WebEnteringVatidAndCompanyName.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/features/web_entering_vatid_and_company_name.feature" afterPath="$PROJECT_DIR$/src/test/features/web_entering_vatid_and_company_name.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/step/Hook.java" afterPath="$PROJECT_DIR$/src/test/java/step/Hook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebCompanyInfoSearchCucumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebCompanyInfoSearchCucumberTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/webStep/WebEnteringVatidAndCompanyName.java" afterPath="$PROJECT_DIR$/src/test/java/webStep/WebEnteringVatidAndCompanyName.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber.json" afterPath="$PROJECT_DIR$/target/cucumber.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Dockerfile" afterPath="$PROJECT_DIR$/test/Dockerfile" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,21 +31,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/util.js">
+      <file leaf-file-name="companyInfoSearchTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/companyinfo/companyInfoSearchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="57">
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoice_input.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/invoice_input.vm">
+      <file leaf-file-name="IssuingInvoiceStep.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/step/IssuingInvoiceStep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+            <state relative-caret-position="539">
+              <caret line="40" column="62" lean-forward="false" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -53,11 +54,21 @@
       <file leaf-file-name="Hook.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/step/Hook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="399">
+              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="issuing_company_invoice.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/features/issuing_company_invoice.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-630">
+              <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web_entering_vatid_and_company_name.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web_entering_vatid_and_company_name.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/features/web_entering_vatid_and_company_name.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="10" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -95,8 +106,8 @@
       <file leaf-file-name="WebCompanyInfoSearchCucumberTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebCompanyInfoSearchCucumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,22 +125,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebEnteringVatidAndCompanyName.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebEnteringVatidAndCompanyName.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/webStep/WebEnteringVatidAndCompanyName.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoice_result.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/invoice_result.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="653">
+              <caret line="59" column="11" lean-forward="true" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+              <folding>
+                <element signature="e#2099#2100#0" expanded="true" />
+                <element signature="e#2146#2147#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,10 +188,10 @@
         <option value="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/invoice/companyInfoSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/web/app/InvoiceWeb.java" />
         <option value="$PROJECT_DIR$/src/main/resources/invoice_input.vm" />
-        <option value="$PROJECT_DIR$/src/test/java/webStep/WebEnteringVatidAndCompanyName.java" />
-        <option value="$PROJECT_DIR$/src/test/features/web_entering_vatid_and_company_name.feature" />
         <option value="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebCompanyInfoSearchCucumberTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/step/Hook.java" />
+        <option value="$PROJECT_DIR$/src/test/features/web_entering_vatid_and_company_name.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/webStep/WebEnteringVatidAndCompanyName.java" />
       </list>
     </option>
   </component>
@@ -340,6 +344,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SLM2017_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SLM2017_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="invoice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -538,7 +572,7 @@
       <recent name="C:\Users\jay\Desktop\SLM2017\src\test\java\step" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: entering_vatid_and_company_name">
+  <component name="RunManager" selected="JUnit.WebCompanyInfoSearchCucumberTest">
     <configuration default="false" name="WebCompanyInfoSearchCucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -891,9 +925,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: entering_vatid_and_company_name" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.WebCompanyInfoSearchCucumberTest" />
         <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: web_entering_vatid_and_company_name" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WebCompanyInfoSearchCucumberTest" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: entering_vatid_and_company_name" />
         <item index="3" class="java.lang.String" itemvalue="Application.InvoiceWeb" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.companyInfoSearchTest" />
       </list>
@@ -916,37 +950,37 @@
     <history-entry file="Feature__entering_vatid_and_company_name - 2017.04.18 at 17h 14m 46s.xml">
       <configuration name="Feature: entering_vatid_and_company_name" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__web_entering_vatid_and_company_name - 2017.04.18 at 17h 03m 42s.xml">
+    <history-entry file="Feature__web_entering_vatid_and_company_name - 2017.04.18 at 17h 58m 45s.xml">
       <configuration name="Feature: web_entering_vatid_and_company_name" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__web_entering_vatid_and_company_name - 2017.04.18 at 17h 14m 09s.xml">
+    <history-entry file="Feature__web_entering_vatid_and_company_name - 2017.04.18 at 18h 03m 54s.xml">
       <configuration name="Feature: web_entering_vatid_and_company_name" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 17h 00m 18s.xml">
+    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 17h 56m 21s.xml">
       <configuration name="WebCompanyInfoSearchCucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 17h 02m 02s.xml">
+    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 17h 59m 33s.xml">
       <configuration name="WebCompanyInfoSearchCucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 17h 04m 19s.xml">
+    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 18h 04m 24s.xml">
       <configuration name="WebCompanyInfoSearchCucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 17h 10m 21s.xml">
+    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 18h 14m 14s.xml">
       <configuration name="WebCompanyInfoSearchCucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 17h 10m 35s.xml">
+    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 18h 14m 51s.xml">
       <configuration name="WebCompanyInfoSearchCucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 17h 12m 16s.xml">
+    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 18h 15m 09s.xml">
       <configuration name="WebCompanyInfoSearchCucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="companyInfoSearchTest - 2017.04.18 at 12h 17m 43s.xml">
-      <configuration name="companyInfoSearchTest" configurationId="JUnit" />
+    <history-entry file="WebCompanyInfoSearchCucumberTest - 2017.04.18 at 18h 15m 54s.xml">
+      <configuration name="WebCompanyInfoSearchCucumberTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -963,7 +997,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -992,14 +1026,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/step/IssuingInvoiceStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="40" column="62" lean-forward="false" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/web/app/InvoiceWeb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1031,6 +1057,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1192,13 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/features/issuing_company_invoice.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/support/CustomPicoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1217,14 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step/IssuingInvoiceStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="40" column="62" lean-forward="false" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -1279,14 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/companyinfo/companyInfoSearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/web/app/InvoiceWeb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
@@ -1322,26 +1326,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/webStep/WebEnteringVatidAndCompanyName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebIssuingInvoiceCucumberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/features/entering_vatid_and_company_name.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar!/cucumber/api/java/Before.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/companyinfo/companyInfoSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step/IssuingInvoiceStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="40" column="62" lean-forward="false" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -1354,20 +1366,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebCompanyInfoSearchCucumberTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/features/issuing_company_invoice.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-630">
+          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/step/Hook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="399">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1377,8 +1387,37 @@
     <entry file="file://$PROJECT_DIR$/src/test/features/web_entering_vatid_and_company_name.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="10" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="5" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebIssuingInvoiceCucumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebCompanyInfoSearchCucumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/webStep/WebEnteringVatidAndCompanyName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="59" column="11" lean-forward="true" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+          <folding>
+            <element signature="e#2099#2100#0" expanded="true" />
+            <element signature="e#2146#2147#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
