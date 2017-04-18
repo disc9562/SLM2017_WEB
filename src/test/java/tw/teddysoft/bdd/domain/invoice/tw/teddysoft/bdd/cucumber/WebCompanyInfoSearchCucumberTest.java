@@ -13,6 +13,6 @@ import org.junit.runner.RunWith;
         glue = {"webStep"},
         format = {"json:target/cucumber.json", "html:target/site/cucumber-pretty"}
 )
-public class WebVatidAndCompanyNameCucumberTest {
+public class WebCompanyInfoSearchCucumberTest {
 
 }

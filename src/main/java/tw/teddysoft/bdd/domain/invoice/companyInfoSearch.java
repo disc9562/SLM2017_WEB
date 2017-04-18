@@ -10,7 +10,7 @@ import org.json.JSONObject;
 /**
  * Created by jay on 2017/4/13.
  */
-public class VatidAndCompanyName {
+public class companyInfoSearch {
     public static String getCompanyName(String vatid) throws UnirestException {
 
         HttpResponse<JsonNode> jsonResponse = Unirest.post("http://company.g0v.ronny.tw/api/show/{vatid}")
