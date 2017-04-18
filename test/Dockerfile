@@ -1,7 +1,7 @@
 FROM java:8
 
 # Install maven
-RUN apt-get update
+#RUN apt-get update
 #RUN apt-get install -y maven
 
 #WORKDIR /code
@@ -16,4 +16,4 @@ RUN apt-get update
 #RUN ["mvn", "package"]
 
 EXPOSE 4567
-CMD ["/usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-Dfile.encoding=UTF-8 ", "-jar", "target/sparkexample-jar-with-dependencies.jar"]
+CMD ["java", "-Dfile.encoding=UTF-8 ", "-jar", "target/CucumberBasic-1.0-SNAPSHOT-jar-with-dependencies.jar"]
