@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce85260e-bcb7-4f2c-aae9-aca46a350af3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/domain/invoice/VatidAndCompanyName.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/companyinfo/companyInfoSearchTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/VatidAndCompanyNameCucumberTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/tw/teddysoft/bdd/domain/invoice/tw/teddysoft/bdd/cucumber/WebVatidAndCompanyNameCucumberTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/companyInfo/companyInfoSearchTest.java" afterPath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/companyInfoSearchTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/web/app/InvoiceWeb.class" afterPath="$PROJECT_DIR$/target/classes/tw/teddysoft/bdd/web/app/InvoiceWeb.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step/EnteringVatidAndCompanyName.class" afterPath="$PROJECT_DIR$/target/test-classes/step/EnteringVatidAndCompanyName.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/companyInfoSearchTest.java" afterPath="$PROJECT_DIR$/src/test/java/companyinfo/companyInfoSearchTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="companyInfoSearchTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/companyInfoSearchTest.java">
+      <file leaf-file-name="companyInfoSearchTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/companyinfo/companyInfoSearchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="152">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvoiceWeb.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InvoiceWeb.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/web/app/InvoiceWeb.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
@@ -182,8 +175,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/companyInfo/companyInfoSearchTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tw/teddysoft/bdd/domain/invoice/companyInfoSearch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/companyinfo/companyInfoSearchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/companyInfoSearchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/companyinfo/companyInfoSearchTest.java" />
       </list>
     </option>
   </component>
@@ -395,6 +388,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="step" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SLM2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SLM2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="companyinfo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -632,15 +651,15 @@
     <configuration default="false" name="companyInfoSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="tw.teddysoft.bdd.domain.invoice.*" />
+          <option name="PATTERN" value="companyinfo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="SLM2017" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tw.teddysoft.bdd.domain.invoice" />
-      <option name="MAIN_CLASS_NAME" value="tw.teddysoft.bdd.domain.invoice.companyInfoSearchTest" />
+      <option name="PACKAGE_NAME" value="companyinfo" />
+      <option name="MAIN_CLASS_NAME" value="companyinfo.companyInfoSearchTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -941,7 +960,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1346,16 +1365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tw/teddysoft/bdd/domain/invoice/companyInfoSearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1767">
@@ -1369,6 +1378,16 @@
         <state relative-caret-position="192">
           <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/companyinfo/companyInfoSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
