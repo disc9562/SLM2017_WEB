@@ -1,4 +1,4 @@
-package companyinfo;
+package tw.teddysoft.bdd.domain.invoice;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.junit.Test;
