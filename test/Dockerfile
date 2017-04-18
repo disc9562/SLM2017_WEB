@@ -15,5 +15,5 @@ FROM java:8
 #ADD src /code/src
 #RUN ["mvn", "package"]
 
-EXPOSE 4567
+#EXPOSE 4567
 CMD ["java", "-Dfile.encoding=UTF-8 ", "-jar", "target/CucumberBasic-1.0-SNAPSHOT-jar-with-dependencies.jar"]
