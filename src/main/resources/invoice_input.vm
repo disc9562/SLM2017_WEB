@@ -43,8 +43,8 @@
 <td>統一編號</td>
 </tr>
 <tr>
-<td><input id="companyName" name="companyName" type="text" onkeypress="clearVatid"></td>
-<td><input id="vatid" name="vatid" type="text" onkeypress="clearCompanyName"></td>
+<td><input id="companyName" name="companyName" type="text" onkeypress="clearVatid()"></td>
+<td><input id="vatid" name="vatid" type="text" onkeypress="clearCompanyName()"></td>
 </tr>
 </table>
 

@@ -20,6 +20,7 @@ public class companyInfoSearch {
 
         JSONObject obj = (JSONObject) jsonResponse.getBody().getObject().get("data");
         String companyName = obj.get("公司名稱").toString();
+//        System.out.print(companyName);
         return companyName;
     }
 

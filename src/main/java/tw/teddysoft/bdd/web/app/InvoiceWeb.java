@@ -22,7 +22,10 @@ import static spark.Spark.*;
 public final class InvoiceWeb {
 
     public static void main(String[] args) {
-//        port(Integer.valueOf(args[0]));
+//        if(args.length > 0){
+//            port(Integer.valueOf(args[0]));
+//            System.out.print("aaa");
+//        }
         get("/invoice", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("Title", "三聯式發票");
@@ -52,7 +55,8 @@ public final class InvoiceWeb {
 
             Map<String, Object> model = new HashMap<>();
             model.put("invoice", invoice);
-
+            model.put("companyName","");
+            model.put("vatid","");
             return new ModelAndView(model, "invoice_result.vm"); // located in the resources directory
         }, new VelocityTemplateEngine());
 
