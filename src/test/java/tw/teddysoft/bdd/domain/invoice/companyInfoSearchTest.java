@@ -1,10 +1,8 @@
-package companyInfo;
+package tw.teddysoft.bdd.domain.invoice;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.junit.Test;
-import tw.teddysoft.bdd.domain.invoice.companyInfoSearch;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+
 import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Created by jay on 2017/4/17.
