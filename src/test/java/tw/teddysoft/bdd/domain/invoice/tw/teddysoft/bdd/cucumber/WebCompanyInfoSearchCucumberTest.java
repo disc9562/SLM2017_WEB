@@ -14,7 +14,7 @@ import tw.teddysoft.bdd.web.app.InvoiceWeb;
 @CucumberOptions(
         features = "src/test/features/web_entering_vatid_and_company_name.feature",
         glue = {"webStep"},
-        format = {"json:target/cucumber.json", "html:target/site/cucumber-pretty"}
+        format = {"json:target/web_entering_vatid_and_company_name_cucumber.json", "html:target/site/web_entering_vatid_and_company_name_cucumber-pretty"}
 )
 public class WebCompanyInfoSearchCucumberTest {
 
