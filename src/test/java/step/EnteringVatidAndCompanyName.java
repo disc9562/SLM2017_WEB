@@ -3,7 +3,7 @@ package step;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import tw.teddysoft.bdd.domain.invoice.companyInfoSearch;
+import tw.teddysoft.bdd.domain.invoice.CompanyInfoSearch;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -20,7 +20,7 @@ public class EnteringVatidAndCompanyName {
 
     @Then("^I should see the company name \"([^\"]*)\"$")
     public void iShouldSeeTheCompanyName(String companyName) throws UnirestException {
-        assertThat(companyInfoSearch.getCompanyName(vatid), is( companyName ));
+        assertThat(CompanyInfoSearch.getCompanyName(vatid), is( companyName ));
     }
 
     @When("^I enter the company name \"([^\"]*)\"$")
@@ -28,7 +28,7 @@ public class EnteringVatidAndCompanyName {
 
     @Then("^I should see the VAT ID \"([^\"]*)\"$")
     public void iShouldSeeTheVATID(String vatid) throws UnirestException {
-        assertThat(companyInfoSearch.getVatid(companyName), is( vatid ));
+        assertThat(CompanyInfoSearch.getVatid(companyName), is( vatid ));
     }
 
 }

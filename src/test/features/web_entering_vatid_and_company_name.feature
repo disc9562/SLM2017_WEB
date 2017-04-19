@@ -1,11 +1,11 @@
-Feature: Entering VAT ID and the company name
+Feature: Entering VAT ID and the company name using web site
   In order to avoid errors
   As a Teddysoft employee
   I want to make sure the VAT ID and company name are consistency
 #  Background :
 #    Given Open service
 #  @OpenWeb
-  Scenario Outline: Entering company name gets the corresponding VAT ID with web
+  Scenario Outline: Entering company name gets the corresponding VAT ID using web site
   Given I am on the google browser
   When I enter the company name "<companyName>" in company name field
   Then I should see the VAT ID field show "<vatid>" in browser
@@ -17,7 +17,7 @@ Feature: Entering VAT ID and the company name
   | 百碩工業股份有限公司  | 97352022  |
   | 大鵰生技股份有限公司 | 86831314  |
 
-  Scenario Outline: Entering VAT ID gets the corresponding company name with web
+  Scenario Outline: Entering VAT ID gets the corresponding company using web site
   Given I am on the google browser
   When I enter the VAT ID "<vatid>" in VAT ID field
   Then I should see the company name field show "<companyName>" in browser

@@ -4,7 +4,7 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import tw.teddysoft.bdd.domain.invoice.Invoice;
 import tw.teddysoft.bdd.domain.invoice.InvoiceBuilder;
-import tw.teddysoft.bdd.domain.invoice.companyInfoSearch;
+import tw.teddysoft.bdd.domain.invoice.CompanyInfoSearch;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -66,10 +66,10 @@ public final class InvoiceWeb {
             String vatid = request.queryMap("vatid").value();
 
             if(isUseCompanyNameToSearch(companyName)){
-                vatid = companyInfoSearch.getVatid(companyName);
+                vatid = CompanyInfoSearch.getVatid(companyName);
             }
             else {
-                companyName = companyInfoSearch.getCompanyName(vatid);
+                companyName = CompanyInfoSearch.getCompanyName(vatid);
             }
             Map<String, Object> model = new HashMap<>();
             model.put("companyName",companyName);
