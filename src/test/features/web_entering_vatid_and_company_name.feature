@@ -16,6 +16,7 @@ Feature: Entering VAT ID and the company name using web site
   | 鼓勵閣商業顧問有限公司 |  24940741  |
   | 百碩工業股份有限公司  | 97352022  |
   | 大鵰生技股份有限公司 | 86831314  |
+  | 顆顆公司       |  查無統一編號   |
 
   Scenario Outline: Entering VAT ID gets the corresponding company using web site
   Given I am on the google browser
@@ -28,3 +29,4 @@ Feature: Entering VAT ID and the company name using web site
   | 鼓勵閣商業顧問有限公司 |  24940741  |
   | 百碩工業股份有限公司  | 97352022  |
   | 大鵰生技股份有限公司 | 86831314  |
+  | 查無公司 | 32154968462     |

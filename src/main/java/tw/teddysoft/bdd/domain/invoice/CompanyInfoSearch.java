@@ -22,7 +22,7 @@ public class CompanyInfoSearch {
             String companyName = obj.get("公司名稱").toString();
             return companyName;
         }catch (Exception e){
-            return "資料異常";
+            return "查無公司";
         }
     }
 
@@ -38,7 +38,7 @@ public class CompanyInfoSearch {
             String vatid = obj.get("統一編號").toString();
             return vatid;
         }catch (Exception e){
-            return "資料異常";
+            return "查無統一編號";
         }
     }
 }
