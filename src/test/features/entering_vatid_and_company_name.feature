@@ -13,6 +13,7 @@ Feature: Entering VAT ID and the company name
       | 鼓勵閣商業顧問有限公司 |  24940741  |
       | 百碩工業股份有限公司  | 97352022  |
       | 大鵰生技股份有限公司 | 86831314  |
+      | 查無公司 | 32154968462     |
 
   Scenario Outline: Entering company name gets the corresponding VAT ID
     When  I enter the company name "<companyName>"
@@ -24,3 +25,5 @@ Feature: Entering VAT ID and the company name
       | 鼓勵閣商業顧問有限公司 |  24940741  |
       | 百碩工業股份有限公司  | 97352022  |
       | 大鵰生技股份有限公司 | 86831314  |
+      | 顆顆公司       |  查無統一編號   |
+
