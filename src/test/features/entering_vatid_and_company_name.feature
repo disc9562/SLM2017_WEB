@@ -13,7 +13,9 @@ Feature: Entering VAT ID and the company name
       | 鼓勵閣商業顧問有限公司 |  24940741  |
       | 百碩工業股份有限公司  | 97352022  |
       | 大鵰生技股份有限公司 | 86831314  |
-      | 查無公司 | 32154968462     |
+      | 東發視聽社       | 11111111       |
+      | 國立臺北科技大學  | 92021164     |
+      | 統一編號錯誤           | 999999999      |
 
   Scenario Outline: Entering company name gets the corresponding VAT ID
     When  I enter the company name "<companyName>"
@@ -25,5 +27,6 @@ Feature: Entering VAT ID and the company name
       | 鼓勵閣商業顧問有限公司 |  24940741  |
       | 百碩工業股份有限公司  | 97352022  |
       | 大鵰生技股份有限公司 | 86831314  |
-      | 顆顆公司       |  查無統一編號   |
+      | 泰迪軟體科技公司       |  查無資料   |
+      | 公司         | 共有1515261筆資料        |
 
