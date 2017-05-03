@@ -34,10 +34,10 @@ public class CompanyInfoSearchTest {
     public void company_name_should_get_復華廣告有限公司_when_vatid_is_empty() throws UnirestException {
         Assertions.assertThat(CompanyInfoSearch.getCompanyName("")).isEqualTo("復華廣告有限公司");
     }
-    @Test
-    public void noInternet()throws UnirestException{
-        Assertions.assertThat(CompanyInfoSearch.getCompanyName("27932771")).isEqualTo("查無公司");
-    }
+//    @Test
+//    public void noInternet()throws UnirestException{
+//        Assertions.assertThat(CompanyInfoSearch.getCompanyName("27932771")).isEqualTo("查無公司");
+//    }
 
     @Test
     public void vatid_should_not_find_anything_when_company_name_is_泰迪軟體科技公司() throws UnirestException{
@@ -50,7 +50,7 @@ public class CompanyInfoSearchTest {
     }
 
     @Test
-    public void vatid_should_found_1515261_data_when_company_name_is_公司() throws UnirestException {
+    public void vatid_should_find_2_data_when_company_name_is_東發視聽社() throws UnirestException {
         assertThat(CompanyInfoSearch.getVatid("東發視聽社")).isEqualTo("共有2筆資料");
     }
 }
