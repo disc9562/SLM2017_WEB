@@ -17,7 +17,7 @@ Feature: Entering VAT ID and the company name using web site
   | 百碩工業股份有限公司  | 97352022  |
   | 大鵰生技股份有限公司 | 86831314  |
   | 泰迪軟體科技公司       |  查無資料   |
-  | 公司         | 共有1515261筆資料        |
+  | 東發視聽社         | 共有2筆資料        |
 
   Scenario Outline: Entering VAT ID gets the corresponding company using web site
   Given I am on the google browser
@@ -33,3 +33,4 @@ Feature: Entering VAT ID and the company name using web site
   | 東發視聽社       | 11111111       |
   | 國立臺北科技大學  | 92021164     |
   | 統一編號錯誤           | 999999999      |
+    |      復華廣告有限公司            |                |
