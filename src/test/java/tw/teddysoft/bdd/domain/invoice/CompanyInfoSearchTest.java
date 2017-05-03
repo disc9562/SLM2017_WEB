@@ -51,6 +51,6 @@ public class CompanyInfoSearchTest {
 
     @Test
     public void vatid_should_found_1515261_data_when_company_name_is_公司() throws UnirestException {
-        assertThat(CompanyInfoSearch.getVatid("公司")).isEqualTo("共有1515261筆資料");
+        assertThat(CompanyInfoSearch.getVatid("東發視聽社")).isEqualTo("共有2筆資料");
     }
 }
