@@ -31,6 +31,10 @@ public class CompanyInfoSearchTest {
     }
 
     @Test
+    public void company_name_should_get_復華廣告有限公司_when_vatid_is_empty() throws UnirestException {
+        Assertions.assertThat(CompanyInfoSearch.getCompanyName("")).isEqualTo("復華廣告有限公司");
+    }
+    @Test
     public void noInternet()throws UnirestException{
         Assertions.assertThat(CompanyInfoSearch.getCompanyName("27932771")).isEqualTo("查無公司");
     }
